@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive Tabs</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 12px;
+      background: transparent;
+      font-family: 'Pixelify Sans', sans-serif;
+      color: white;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .tab {
+      padding: 6px 12px;
+      cursor: pointer;
+      border: 2px solid white;
+      user-select: none;
+      font-size: 16px;
+    }
+
+    .tab.active {
+      background: white;
+      color: black;
+    }
+
+    .content {
+      display: none;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .content.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="tabs">
+    <div class="tab active" data-tab="tab1">TAB 1</div>
+    <div class="tab" data-tab="tab2">TAB 2</div>
+    <div class="tab" data-tab="tab3">TAB 3</div>
+  </div>
+
+  <div id="tab1" class="content active">
+    This is the content for Tab 1.
+  </div>
+
+  <div id="tab2" class="content">
+    This is the content for Tab 2.
+  </div>
+
+  <div id="tab3" class="content">
+    This is the content for Tab 3.
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.dataset.tab;
+
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        tab.classList.add('active');
+        document.getElementById(target).classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
