@@ -1,0 +1,132 @@
+/* ===============================
+   GLOBAL THEME VARIABLES
+   =============================== */
+:root {
+  /* Colors */
+  --color-bg: #202020;
+  --color-text: #ffffff;
+  --color-accent: #64c83c;
+  --color-border: #64c83c;
+
+  /* Fonts */
+  --font-body: 'Pixelify Sans', sans-serif;
+  --font-header: 'Silkscreen', monospace;
+
+  /* Font sizes */
+  --size-body: 16px;
+  --size-header: 16px;
+
+  /* Spacing */
+  --spacing-small: 8px;
+  --spacing-medium: 12px;
+  --spacing-large: 20px;
+
+  /* Borders */
+  --border-thick: 4px;
+}
+
+/* ===============================
+   BASE / RESET
+   =============================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: var(--spacing-medium);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: 1.4;
+}
+
+/* ===============================
+   HEADERS
+   =============================== */
+h1, h2, h3, h4 {
+  font-family: var(--font-header);
+  color: var(--color-accent);
+  margin-top: 0;
+  margin-bottom: var(--spacing-small);
+}
+
+/* ===============================
+   PARAGRAPHS
+   =============================== */
+p {
+  margin-top: 0;
+  margin-bottom: var(--spacing-medium);
+}
+
+/* Indented secondary paragraph */
+p.indent {
+  margin-left: 3ch;
+}
+
+/* ===============================
+   LINKS
+   =============================== */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   NAVIGATION (OPTIONAL)
+   =============================== */
+nav {
+  margin-bottom: var(--spacing-large);
+}
+
+nav a {
+  margin-right: var(--spacing-medium);
+}
+
+/* ===============================
+   PIXEL TABLE
+   =============================== */
+.pixel-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: var(--border-thick) solid var(--color-border);
+  background-color: var(--color-bg);
+}
+
+.pixel-table th,
+.pixel-table td {
+  border: 1px solid var(--color-border);
+  padding: 0.069in;
+  vertical-align: top;
+}
+
+.pixel-table th {
+  font-family: var(--font-header);
+  font-weight: normal;
+  text-align: left;
+}
+
+.pixel-table td {
+  font-family: var(--font-body);
+}
+
+/* ===============================
+   TABS / BUTTONS
+   =============================== */
+.tab {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 2px solid var(--color-border);
+  cursor: pointer;
+  user-select: none;
+}
+
+.tab.active {
+  background-color: var(--color-border);
+  color: #000;
+}
