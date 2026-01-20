@@ -91,7 +91,7 @@ p.indent {
 }
 
 /* Indented tertiary paragraph */
-p.indent.final {
+p.indent-final {
   margin-left: 3ch;
   margin-bottom: var(--spacing-tiny);
 }
