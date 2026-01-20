@@ -71,7 +71,7 @@ h2 {
 h3 {
   font-family: var(--font-header-sub);
   color: var(--color-text);
-  font-weight: 700;
+  font-weight: normal;
   font-size: var(--size-header3);
   margin-top: 0;
   margin-bottom: var(--spacing-tiny);
