@@ -18,7 +18,8 @@
   --size-header: 16px;
 
   /* Spacing */
-  --spacing-small: 8px;
+  --spacing-tiny: 2px;
+  --spacing-small: 6px;
   --spacing-medium: 12px;
   --spacing-large: 20px;
 
@@ -58,9 +59,8 @@ h3, h4 {
   font-family: var(--font-header);
   color: var(--color-text);
   font-weight: normal;
-  letter-spacing: 10px;
   margin-top: 0;
-  margin-bottom: var(--spacing-small);
+  margin-bottom: var(--spacing-tiny);
 }
 
 /* ===============================
@@ -68,12 +68,18 @@ h3, h4 {
    =============================== */
 p {
   margin-top: 0;
-  margin-bottom: var(--spacing-medium);
+  margin-bottom: var(--spacing-small);
 }
 
 /* Indented secondary paragraph */
 p.indent {
   margin-left: 3ch;
+}
+
+/* Indented tertiary paragraph */
+p.indent.final {
+  margin-left: 3ch;
+  margin-bottom: var(--spacing-tiny);
 }
 
 /* ===============================
