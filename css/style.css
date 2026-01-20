@@ -11,7 +11,8 @@
 
   /* Fonts */
   --font-body: 'Pixelify Sans', sans-serif;
-  --font-header: 'Silkscreen', monospace;
+  --font-header-sub: 'Silkscreen', monospace;
+  --font-header-main: 'Jacquard 12', monospace;
 
   /* Font sizes */
   --size-body: 16px;
@@ -48,7 +49,7 @@ body {
    HEADERS
    =============================== */
 h1, h2 {
-  font-family: var(--font-header);
+  font-family: var(--font-header-main);
   color: var(--color-green);
   font-weight: normal;
   margin-top: 0;
@@ -56,7 +57,7 @@ h1, h2 {
 }
 
 h3, h4 {
-  font-family: var(--font-header);
+  font-family: var(--font-header-sub);
   color: var(--color-text);
   font-weight: normal;
   margin-top: 0;
