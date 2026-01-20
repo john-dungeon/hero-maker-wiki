@@ -16,7 +16,9 @@
 
   /* Font sizes */
   --size-body: 16px;
-  --size-header: 16px;
+  --size-header3: 16px;
+  --size-header2: 36px;
+  --size-header1: 48px;
 
   /* Spacing */
   --spacing-tiny: 2px;
@@ -48,18 +50,29 @@ body {
 /* ===============================
    HEADERS
    =============================== */
-h1, h2 {
+h1 {
   font-family: var(--font-header-main);
   color: var(--color-green);
   font-weight: normal;
+  font-size: var(--size-header1);
   margin-top: 0;
   margin-bottom: var(--spacing-small);
 }
 
-h3, h4 {
+h2 {
+  font-family: var(--font-header-main);
+  color: var(--color-green);
+  font-weight: normal;
+  font-size: var(--size-header2);
+  margin-top: 0;
+  margin-bottom: var(--spacing-small);
+}
+
+h3 {
   font-family: var(--font-header-sub);
   color: var(--color-text);
-  font-weight: normal;
+  font-weight: 700;
+  font-size: var(--size-header3);
   margin-top: 0;
   margin-bottom: var(--spacing-tiny);
 }
