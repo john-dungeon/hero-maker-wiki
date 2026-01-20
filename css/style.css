@@ -23,7 +23,7 @@
   /* Spacing */
   --spacing-small: 6px;
   --spacing-medium: 12px;
-  --spacing-large: 20px;
+  --spacing-large: 24px;
 
   /* Borders */
   --border-thick: 4px;
@@ -94,7 +94,7 @@ p.final {
 p.indent {
   margin-top: 0;
   margin-left: 2ch;
-  margin-bottom: var(--spacing-large);
+  margin-bottom: var(--spacing-medium);
 }
 
 /* Indented final paragraph */
