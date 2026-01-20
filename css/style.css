@@ -11,7 +11,7 @@
 
   /* Fonts */
   --font-body: 'Pixelify Sans', sans-serif;
-  --font-header-sub: 'Silkscreen', monospace;
+  --font-header-sub: 'Silkscreen', san-serif, font-weight: 700;
   --font-header-main: 'Jacquard 12', monospace;
 
   /* Font sizes */
