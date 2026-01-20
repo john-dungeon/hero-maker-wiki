@@ -17,8 +17,8 @@
   /* Font sizes */
   --size-body: 16px;
   --size-header3: 24px;
-  --size-header2: 60px;
-  --size-header1: 84px;
+  --size-header2: 48px;
+  --size-header1: 72px;
 
   /* Spacing */
   --spacing-tiny: 2px;
@@ -85,13 +85,22 @@ p {
   margin-bottom: var(--spacing-small);
 }
 
-/* Indented secondary paragraph */
-p.indent {
-  margin-left: 2ch;
+/* Final paragraph */
+p.final {
+  margin-top: 0;
+  margin-bottom: var(--spacing-tiny);
 }
 
-/* Indented tertiary paragraph */
+/* Indented secondary paragraph */
+p.indent {
+  margin-top: 0;
+  margin-left: 2ch;
+  margin-bottom: var(--spacing-small);
+}
+
+/* Indented final paragraph */
 p.indent-final {
+  margin-top: 0;
   margin-left: 2ch;
   margin-bottom: var(--spacing-tiny);
 }
