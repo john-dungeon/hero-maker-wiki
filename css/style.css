@@ -87,12 +87,12 @@ p {
 
 /* Indented secondary paragraph */
 p.indent {
-  margin-left: 3ch;
+  margin-left: 2ch;
 }
 
 /* Indented tertiary paragraph */
 p.indent-final {
-  margin-left: 3ch;
+  margin-left: 2ch;
   margin-bottom: var(--spacing-tiny);
 }
 
