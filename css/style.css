@@ -21,7 +21,6 @@
   --size-header1: 60px;
 
   /* Spacing */
-  --spacing-tiny: 2px;
   --spacing-small: 6px;
   --spacing-medium: 12px;
   --spacing-large: 20px;
@@ -74,7 +73,7 @@ h3 {
   font-weight: normal;
   font-size: var(--size-header3);
   margin-top: 0;
-  margin-bottom: var(--spacing-tiny);
+  margin-bottom: var(--spacing-small);
 }
 
 /* ===============================
@@ -82,27 +81,27 @@ h3 {
    =============================== */
 p {
   margin-top: 0;
-  margin-bottom: var(--spacing-small);
+  margin-bottom: var(--spacing-medium);
 }
 
 /* Final paragraph */
 p.final {
   margin-top: 0;
-  margin-bottom: 1000px;
+  margin-bottom: var(--spacing-small);
 }
 
 /* Indented secondary paragraph */
 p.indent {
   margin-top: 0;
   margin-left: 2ch;
-  margin-bottom: var(--spacing-small);
+  margin-bottom: var(--spacing-large);
 }
 
 /* Indented final paragraph */
 p.indent-final {
   margin-top: 0;
   margin-left: 2ch;
-  margin-bottom: var(--spacing-tiny);
+  margin-bottom: var(--spacing-small);
 }
 
 /* ===============================
