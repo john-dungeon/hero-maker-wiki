@@ -124,7 +124,7 @@ nav a {
 }
 
 .pixel-table th {
-  font-family: var(--font-header);
+  font-family: var(--font-header-sub);
   font-weight: normal;
   text-align: left;
 }
