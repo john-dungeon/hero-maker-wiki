@@ -84,20 +84,17 @@ p {
   margin-bottom: var(--spacing-medium);
 }
 
-/* End Paragraph */
-p.final {
-  margin-top: 0;
-  margin-bottom: var(--spacing-small);
-}
-
-/* Indented Secondary Paragraph */
 p.indent {
   margin-top: 0;
   margin-left: 2ch;
   margin-bottom: var(--spacing-medium);
 }
 
-/* Indented End Paragraph */
+p.final {
+  margin-top: 0;
+  margin-bottom: var(--spacing-small);
+}
+
 p.indent-final {
   margin-top: 0;
   margin-left: 2ch;
