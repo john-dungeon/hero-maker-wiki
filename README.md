@@ -1,4 +1,4 @@
-# hero-maker-wiki
-A site for information about John Dungeon's Hero Maker campaign.
+# secret-stash-of-homebrew
+A site to store John Dungeon's secret stash of homebrew.
 
 [View Wiki](https://john-dungeon.github.io/hero-maker-wiki/)
