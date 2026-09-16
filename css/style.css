@@ -1,6 +1,6 @@
-/* ===============================
-   GLOBAL THEME VARIABLES
-   =============================== */
+/* ============================== */
+/* GLOBAL THEME VARIABLES         */
+/* ============================== */
 :root {
   /* Colors */
   --color-bg: #202020;
@@ -29,9 +29,9 @@
   --border-thick: 4px;
 }
 
-/* ===============================
-   BASE / RESET
-   =============================== */
+/* ============================== */
+/* BASE / RESET                   */
+/* ============================== */
 * {
   box-sizing: border-box;
 }
@@ -46,9 +46,9 @@ body {
   line-height: 1.4;
 }
 
-/* ===============================
-   HEADERS
-   =============================== */
+/* ============================== */
+/* HEADERS                        */
+/* ============================== */
 h1 {
   font-family: var(--font-header-main);
   color: var(--color-green);
@@ -76,37 +76,37 @@ h3 {
   margin-bottom: var(--spacing-small);
 }
 
-/* ===============================
-   PARAGRAPHS
-   =============================== */
+/* ============================== */
+/* PARAGRAPHS                     */
+/* ============================== */
 p {
   margin-top: 0;
   margin-bottom: var(--spacing-medium);
 }
 
-/* Final paragraph */
+/* End Paragraph */
 p.final {
   margin-top: 0;
   margin-bottom: var(--spacing-small);
 }
 
-/* Indented secondary paragraph */
+/* Indented Secondary Paragraph */
 p.indent {
   margin-top: 0;
   margin-left: 2ch;
   margin-bottom: var(--spacing-medium);
 }
 
-/* Indented final paragraph */
+/* Indented End Paragraph */
 p.indent-final {
   margin-top: 0;
   margin-left: 2ch;
   margin-bottom: var(--spacing-small);
 }
 
-/* ===============================
-   LINKS
-   =============================== */
+/* ============================== */
+/* LINKS                          */
+/* ============================== */
 a {
   color: var(--color-blue);
   text-decoration: none;
@@ -116,9 +116,9 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ===============================
-   NAVIGATION (OPTIONAL)
-   =============================== */
+/* ============================== */
+/* NAVIGATION                     */
+/* ============================== */
 nav {
   margin-bottom: var(--spacing-large);
 }
@@ -127,37 +127,37 @@ nav a {
   margin-right: var(--spacing-medium);
 }
 
-/* ===============================
-   PIXEL TABLE
-   =============================== */
-.pixel-table {
+/* ============================== */
+/* TABLES                         */
+/* ============================== */
+.table-1 {
   width: 100%;
   border-collapse: collapse;
   border: var(--border-thick) solid var(--color-border);
   background-color: var(--color-bg);
 }
 
-.pixel-table th,
-.pixel-table td {
+.table-1 th,
+.table-1 td {
   border: 1px solid var(--color-border);
   padding: 0.069in;
   vertical-align: top;
 }
 
-.pixel-table th {
+.table-1 th {
   font-family: var(--font-header-sub);
   font-weight: normal;
   text-align: left;
 }
 
-.pixel-table td {
+.table-1 td {
   font-family: var(--font-body);
 }
 
-/* ===============================
-   TABS / BUTTONS
-   =============================== */
-.tab {
+/* ============================== */
+/* BUTTONS                        */
+/* ============================== */
+.button-1 {
   display: inline-block;
   padding: 6px 12px;
   border: 2px solid var(--color-border);
@@ -165,7 +165,7 @@ nav a {
   user-select: none;
 }
 
-.tab.active {
+.button-1.active {
   background-color: var(--color-border);
   color: #000;
 }
