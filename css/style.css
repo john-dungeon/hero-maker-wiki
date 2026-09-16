@@ -161,8 +161,15 @@ nav a {
   display: inline-block;
   padding: 6px 12px;
   border: 2px solid var(--color-border);
+  color: var(--color-border);
   cursor: pointer;
   user-select: none;
+}
+
+.button-1:hover {
+  background-color: var(--color-border);
+  color: #000;
+  text-decoration: none;
 }
 
 .button-1.active {
